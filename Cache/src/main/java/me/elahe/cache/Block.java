@@ -13,12 +13,12 @@
  */
 package me.elahe.cache;
 
-public class block {
+public class Block {
     private int[] block;
     private int size;
     private int tag;
     private int counter;
-    public block(){
+    public Block(){
         tag=-1; 
     }
 

@@ -21,7 +21,7 @@ public class Cache {
     int m;
     int size;
     int way;
-    private block [][] array;
+    private Block[][] array;
     int col;
     int max;
     public Cache(int k,int b,int c,int way)
@@ -30,12 +30,12 @@ public class Cache {
         this.b=b;
         this.c=c;
         size=c/b/k;
-        array=new block[c/b/k][k];
+        array=new Block[c/b/k][k];
         for(int i=0;i<size;i++)
         {
             for(int j=0;j<k;j++)
             {
-                array[i][j] = new block();
+                array[i][j] = new Block();
                 array[i][j].setSize(b);
             }
         }
@@ -180,14 +180,14 @@ public class Cache {
     /**
      * @return the array
      */
-    public block[][] getArray() {
+    public Block[][] getArray() {
         return array;
     }
 
     /**
      * @param array the array to set
      */
-    public void setArray(block[][] array) {
+    public void setArray(Block[][] array) {
         this.array = array;
     }
 
